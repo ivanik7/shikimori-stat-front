@@ -26,10 +26,10 @@ function App() {
 
         const queryString = new URLSearchParams({
             user: username || "ivanik",
-            blankcolor: blankcolor,
-            mincolor: mincolor,
-            maxcolor: maxcolor,
-            textcolor: textcolor,
+            blankcolor: blankcolor.replace('#', ''),
+            mincolor: mincolor.replace('#', ''),
+            maxcolor: maxcolor.replace('#', ''),
+            textcolor: textcolor.replace('#', ''),
         }).toString();
 
         return [`${import.meta.env.VITE_API}/stat.${format}?${queryString}`, false];
@@ -113,7 +113,7 @@ function App() {
                 <div className="mx-2 text-sm text-gray-500 text-center">
                     <p>Телеграм канал <a className="text-blue-500" href="https://t.me/ivanik_log">@ivanik_log</a></p>
                     <p>Если что-то сломалось - пишите сюда <a className="text-blue-500" href="https://t.me/ivanik7">@ivanik7</a></p>
-                    <p>Мыши плакали, кололись, но продолжали <a className="text-blue-500" href="https:/github.com/ivanik7/shikimori-stat">опенсорсить</a></p>
+                    <p>Мыши плакали, кололись, но продолжали <a className="text-blue-500" href="https://github.com/ivanik7/shikimori-stat">опенсорсить</a></p>
                 </div>
             </div>
         </div>
