@@ -1,8 +1,22 @@
-# React + Vite
+# shikimori-stat frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**[shikimori-stat.ivanik.ru](https://shikimori-stat.ivanik.ru/)**
 
-Currently, two official plugins are available:
+Фронтенд генератор картинок со статистикой [Shikimori](https://shikimori.one/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Пример
+
+Пример статистики моего аккаунта
+
+[![Статистика](https://shikimori-stat-api.ivanik.ru/stat.svg?user=ivanik&blankcolor=bebebe&mincolor=79a9cf&maxcolor=79a9cf&textcolor=000000)](https://shikimori.one/ivanik)
+
+## Разработка
+
+Основной код написан мной, когда я ещё не умел красиво программировать. Сорри.
+
+```
+npm ci
+npm run dev
+```
+
+Для прода все деполится на gh-pages, см. паплайн github ci
