@@ -11,7 +11,7 @@ import ButtonGroup from "./components/ButtonGroup";
 function App() {
     const [user, setUser] = useState("");
     const [mincolor, setMincolor] = useState("#79a9cf");
-    const [maxcolor, setMaxcolor] = useState("#79a9cf");
+    const [maxcolor, setMaxcolor] = useState("#4682B4");
     const [blankcolor, setBlankcolor] = useState("#bebebe");
     const [textcolor, setTextcolor] = useState("#000000");
     const [format, setFormat] = useState("svg");
