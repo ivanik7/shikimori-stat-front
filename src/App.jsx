@@ -18,7 +18,7 @@ function App() {
     const [imgLoading, setImgLoading] = useState(true);
 
     const [url, usernameError] = useMemo(() => {
-        const username = /shikimori\.(one|org)\/(?<username>[^\/]+)\/?$/i.exec(user)?.groups.username ?? user;
+        const username = /shikimori\.(one|me)\/(?<username>[^\/]+)\/?$/i.exec(user)?.groups.username ?? user;
 
         if (username.indexOf("/") !== -1) {
             return ["", true];
